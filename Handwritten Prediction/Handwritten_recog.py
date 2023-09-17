@@ -20,18 +20,18 @@ model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=
 
 model.fit(x_train,y_train, epochs=3)
 
-model.save('handwritten.model')
+model.save('Handwritten_Prediction\handwritten.model')
 
-model = tf.keras.models.load_model('handwritten.model')
+model = tf.keras.models.load_model('Handwritten_Prediction\handwritten.model')
 
 loss, accuracy = model.evaluate(x_test,y_test)
 print(loss)
 print(accuracy)
 
 image_number = 1
-while os.path.isfile(f"digits/digit{image_number}.png"):
+while os.path.isfile(f"E:\Machine Learning\Projects\Handwritten_Prediction\digits\digit{image_number}.png"):
   try:
-    img = cv2.imread(f"digits/digit{image_number}.png")[:,:,0]
+    img = cv2.imread(f"E:\Machine Learning\Projects\Handwritten_Prediction\digits\digit{image_number}.png")[:,:,0]
     img = np.invert(np.array([img]))
     prediction = model.predict(img)
     print(f"The number is probably a {np.argmax(prediction)}")
