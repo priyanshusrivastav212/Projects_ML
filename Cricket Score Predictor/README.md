@@ -1,1 +1,1 @@
-Cricket Score Predictor
+Cricket Score Predictor using Machine Learning
