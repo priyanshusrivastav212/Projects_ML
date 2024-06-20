@@ -1,4 +1,4 @@
-![image](https://github.com/priyanshusrivastav212/Projects_ML/assets/136737027/d1e038c8-05d5-4271-8eec-d81119f2d4fe)Cricket Score Predictor using Machine Learning
+Cricket Score Predictor using Machine Learning
 ![Cricket](https://in.hellomagazine.com/images/0287-197e1eb10af1-81f4a85d85a1-1000/horizontal-1200/indian-cricket-team.jpg)
 
 This Project is designed to predict the Score of T20 Cricket Matches using ML with PYTHON,FLASK,HTML.
